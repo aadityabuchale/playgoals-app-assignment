@@ -1,0 +1,280 @@
+@font-face {
+    font-family: "helvetica bold";
+    src: url(./public/fonts/HelveticaNowDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: "helvetica regular";
+    src: url(./public/fonts/HelveticaNowDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "neuepixel";
+    src: url(./public/fonts/NeuePixelSans.ttf);
+}
+
+@font-face {
+    font-family: "trimposter";
+    src: url(./public/fonts/TrimPosterWebExtraCompressed.ttf);
+}
+
+@font-face {
+    font-family: "broaven";
+    src: url(./public/fonts/Broaven\ Oblique.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#main {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* --------- hero section start --------- */
+
+.hero-section-container {
+    background-image: url(https://cdn.sanity.io/images/cgu626el/production/1d68eabd83633ec0d36db8c994bdd63005850855-1600x1600.jpg?w=1600&h=1600&q=90&auto=format);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.dark-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 12;
+}
+
+.hero-img {
+    width: 90%;
+    min-height: 150vh;
+    text-align: center;
+    position: relative;
+    z-index: 11;
+    scale: 1.1;
+    /* background-color: aquamarine; */
+}
+
+.left-side-text {
+    text-transform: uppercase;
+    font-size: 6.5vmax;
+    font-family: "trimposter";
+    /* background-color: rgb(195, 0, 255); */
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: min-content;
+    height: min-content;
+    padding: 20px;
+    line-height: 0.8;
+}
+
+.background-text {
+    font-family: "broaven";
+    font-size: 20vmax;
+    position: absolute;
+    bottom: 50%;
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.right-side-para {
+    width: 45%;
+    height: 350px;
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    z-index: 14;
+    /* background-color: rgb(20, 171, 221); */
+}
+
+.right-text {
+    font-size: 3vmax;
+    font-family: "helvetica bold";
+    margin-bottom: 25px;
+}
+
+.right-button {
+    padding: 20px;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    font-family: "neuepixel";
+    font-size: 16px;
+    border: none;
+    background-color: red;
+    border-radius: 1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    overflow: hidden;
+    transition: 1.2s all cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-text-container {
+    position: absolute;
+    display: inline-block;
+    width: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: pink; */
+    overflow: hidden;
+}
+
+.right-button:hover span {
+    transform: translateX(45%);
+    transition: 1.2s all cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* --------- hero section end --------- */
+
+/* --------- slider section start --------- */
+
+.slider-section {
+    width: 100vw;
+    height: 85vh;
+    overflow: hidden;
+    background-color: #c4bfbf;
+    margin: 180px 0 60px 0;
+    position: relative;
+    display: flex;
+}
+
+.slider-text-container {
+    width: 60%;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    /* background-color: red; */
+}
+
+.slider-heading {
+    text-transform: uppercase;
+    font-size: 8.5vmax;
+    font-family: "trimposter";
+    /* background-color: rgb(195, 0, 255); */
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 30%;
+    height: min-content;
+    padding: 20px;
+    line-height: 0.8;
+}
+
+.slider-para {
+    font-size: 1.5vmax;
+    text-transform: uppercase;
+    font-family: "helvetica regular";
+    margin-bottom: 25px;
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+    width: 25%;
+}
+
+.slider-container {
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.slider-inner {
+    display: flex;
+    gap: 2.5vmax;
+    width: 100%;
+}
+
+.slide {
+    z-index: 10;
+    min-width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-img {
+    background-image: url(https://playgoals.com/_next/static/media/alpha.2a35ce63.png);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center bottom;
+}
+
+.proxy {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: brown; */
+    z-index: 12;
+    cursor: none;
+}
+
+/* --------- slider section end --------- */
+
+#cursor {
+    height: 105px;
+    width: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-family: "neuepixel";
+    mix-blend-mode: normal;
+    font-size: 16px;
+    position: absolute;
+    pointer-events: none;
+    z-index: 150;
+    transition: 0.8s all cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media screen and (max-width: 480px) {
+    .hero-img {
+        width: 100%;
+        min-height: 120vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-img img {
+        width: 100%;
+    }
+
+    .background-text {
+        font-size: 8vmax;
+    }
+
+    .slide {
+        min-width: 200px;
+        height: 300px;
+    }
+}
